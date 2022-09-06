@@ -10,3 +10,7 @@ def Hausdorff_distance(y_true, y_pred):
     d2_matrix = pairwise_distances(y_true_f,y_pred_f, metric ='euclidean')
     result = tf.math.reduce_mean(tf.math.minimum(d2_matrix, axis=0)) + tf.math.reduce_mean(tf.math.minimum(d2_matrix, axis=1))
     return result
+
+
+
+https://www.kaggle.com/code/rastislav/3d-mri-brain-tumor-segmentation-u-net#Problem-definiton
